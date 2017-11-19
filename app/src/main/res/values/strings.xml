@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hey, Teacher!</string>
+    <string name="login">Логин:</string>
+    <string name="pswr">Пароль:</string>
+    <string name="ok_menu">Войти</string>
+    <string name="forgot_pswr"><u>Забыли пароль?</u></string>
+    <string name="registration"><u>Регистрация</u></string>
+</resources>
