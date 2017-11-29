@@ -76,7 +76,8 @@
         android:text="@string/registration"
         android:textColor="@color/colorMain"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:focusable="true" />
 
     <TextView
         android:id="@+id/textView6"
@@ -88,6 +89,7 @@
         android:clickable="true"
         android:text="@string/forgot_pswr"
         android:textColor="@color/colorMain"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:focusable="true" />
 
 </RelativeLayout>
