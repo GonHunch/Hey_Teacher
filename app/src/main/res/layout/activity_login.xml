@@ -4,24 +4,28 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.goncharov.anton.heyteacher.MainActivity">
+    tools:context="com.goncharov.anton.heyteacher.LoginActivity">
 
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/username"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/usernameText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
+        android:backgroundTint="@color/colorMain"
+        android:cursorVisible="true"
         android:ems="10"
         android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textColorHighlight="@color/colorMainTrans"
+        android:textColorHint="@color/colorMain"
         android:textColorLink="@color/colorMain"
-        android:textCursorDrawable="@color/colorMain"
-        android:backgroundTint="@color/colorMain" />
+        android:textCursorDrawable="@color/colorMain" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/usernameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -31,34 +35,37 @@
 
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/password"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@id/username"
+        android:layout_alignStart="@id/username"
+        android:layout_below="@+id/passwordText"
         android:layout_marginTop="35dp"
+        android:backgroundTint="@color/colorMain"
         android:ems="10"
         android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColorHighlight="@color/colorMainTrans"
+        android:textColorHint="@color/colorMain"
         android:textColorLink="@color/colorMain"
-        android:textCursorDrawable="@color/colorMain"
-        android:backgroundTint="@color/colorMain" />
+        android:textCursorDrawable="@color/colorMain" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/passwordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="58dp"
         android:textSize="20sp"
         android:text="@string/pswr"
-        android:layout_below="@+id/editText"
+        android:layout_below="@id/username"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/proceed"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@id/password"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
         android:background="@color/colorMain"
@@ -67,27 +74,29 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/forgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView6"
+        android:layout_below="@+id/registration"
         android:layout_marginTop="30dp"
         android:clickable="true"
         android:text="@string/registration"
         android:textColor="@color/colorMain"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:focusable="true" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/registration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
+        android:layout_below="@id/proceed"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:clickable="true"
         android:text="@string/forgot_pswr"
         android:textColor="@color/colorMain"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:focusable="true" />
 
 </RelativeLayout>
