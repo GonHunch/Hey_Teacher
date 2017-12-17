@@ -4,6 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.goncharov.anton.heyteacher.RegistrationActivity">
+    tools:context="com.goncharov.anton.heyteacher.RegistrationActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/registerLoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/regis_login"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="32dp" />
+
+    <EditText
+        android:id="@+id/editLogin"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/colorMain"
+        android:inputType="textPersonName"
+        android:textColorHighlight="@color/colorMainTrans"
+        android:textColorHint="@color/colorMain"
+        android:textColorLink="@color/colorMain"
+        android:textCursorDrawable="@color/colorMain"
+        app:layout_constraintStart_toStartOf="@+id/registerLoginText"
+        app:layout_constraintTop_toBottomOf="@+id/registerLoginText" />
+
+    <TextView
+        android:id="@+id/registerPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/regis_pswr"
+        app:layout_constraintStart_toStartOf="@+id/editLogin"
+        app:layout_constraintTop_toBottomOf="@+id/editLogin" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/colorMain"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorHighlight="@color/colorMainTrans"
+        android:textColorHint="@color/colorMain"
+        android:textColorLink="@color/colorMain"
+        android:textCursorDrawable="@color/colorMain"
+        app:layout_constraintEnd_toEndOf="@+id/editLogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editLogin"
+        app:layout_constraintTop_toBottomOf="@+id/registerPasswordText"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/regis_email"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/colorMain"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="@color/colorMainTrans"
+        android:textColorHint="@color/colorMain"
+        android:textColorLink="@color/colorMain"
+        android:textCursorDrawable="@color/colorMain"
+        app:layout_constraintEnd_toEndOf="@+id/editLogin"
+        app:layout_constraintStart_toStartOf="@+id/editLogin"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </android.support.constraint.ConstraintLayout>

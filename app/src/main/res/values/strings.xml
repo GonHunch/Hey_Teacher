@@ -5,4 +5,7 @@
     <string name="ok_menu">Войти</string>
     <string name="forgot_pswr"><u>Забыли пароль?</u></string>
     <string name="registration"><u>Регистрация</u></string>
+    <string name="regis_login"><b>Введите ваш логин:</b></string>
+    <string name="regis_pswr"><b>Введите ваш пароль:</b></string>
+    <string name="regis_email"><b>Введите ваш e-mail:</b></string>
 </resources>
