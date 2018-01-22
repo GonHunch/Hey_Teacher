@@ -7,5 +7,12 @@
     <string name="registration"><u>Регистрация</u></string>
     <string name="regis_login"><b>Введите ваш логин:</b></string>
     <string name="regis_pswr"><b>Введите ваш пароль:</b></string>
-    <string name="regis_email"><b>Введите ваш e-mail:</b></string>
+    <string name="regis_email"><b>Введите ваш e-mail</b> (нужен для восстановления пароля):</string>
+    <string-array name="student_choices">
+        <item>Выставить оцнеку учителю</item>
+        <item>Календарь контрольных работ</item>
+        <item>Написать учителю</item>
+        <item>Написать администрации</item>
+        <item>Сообщить об ошибке</item>
+    </string-array>
 </resources>

@@ -11,32 +11,41 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button proceed;
-    EditText user,password;
+    private EditText Name;
+    private EditText Password;
+    private TextView Info;
+    private Button Login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        proceed = (Button)findViewById(R.id.proceed);
-        proceed.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Перенаправляем...", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
-                startActivity(intent);
-            }
-        });
+        Name = (EditText)findViewById(R.id.username);
+        Password = (EditText)findViewById(R.id.password);
+        Login = (Button)findViewById(R.id.proceed);
 
-        TextView regis = (TextView)findViewById(R.id.registration);
-        regis.setOnClickListener(new View.OnClickListener(){
+        Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Создаём Intent для надписи для перехода на другую активность
-                Intent intent = new Intent(LoginActivity.this, RegistrationActivity.class);
-                startActivity(intent);
+                validate(Name.getText().toString(), Password.getText().toString());
             }
         });
+    }
+
+    private void validate(String userName, String userPassword){
+        if ((userName.equals("Admin")) && (userPassword.equals("1"))) {
+            Toast.makeText(getApplicationContext(), "Вошёл админ", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+            startActivity(intent);
+        } else if ((userName.equals("Teacher")) && (userPassword.equals("1"))){
+            Toast.makeText(getApplicationContext(), "Вошёл учитель", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+            startActivity(intent);
+        } else if ((userName.equals("Student")) && (userPassword.equals("1"))) {
+            Toast.makeText(getApplicationContext(), "Вошёл ученик", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+            startActivity(intent);
+        }
     }
 }

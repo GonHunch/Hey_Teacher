@@ -93,10 +93,10 @@
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
-        android:id="@+id/forgot"
+        android:id="@+id/registration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/registration"
+        android:layout_below="@+id/forgot"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:clickable="true"
@@ -109,7 +109,7 @@
         app:layout_constraintTop_toBottomOf="@+id/proceed" />
 
     <TextView
-        android:id="@+id/registration"
+        android:id="@+id/forgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/proceed"
@@ -122,6 +122,6 @@
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgot" />
+        app:layout_constraintTop_toBottomOf="@+id/registration" />
 
 </android.support.constraint.ConstraintLayout>
